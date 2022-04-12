@@ -5,14 +5,18 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    val events = listOf(
-        Event(
-            foodTruckName: "Authentic Street Taco"
-            location: "Silo Patio"
-            time: "11am - 4pm"
-            foodTruckDesc: "A unique blend of street taco with high-quality\n" +
-                "ingredients to give you the highest quality\n" + "Mexican food."
-            foodTruckWebsite: "https://www.authenticstreettaco.com/"
+    val foodTrucks = listOf(
+        foodTruckData(
+
+            "Authentic Street Taco",
+            "Silo Patio",
+            "11am - 4pm",
+            "A unique blend of street taco with high-quality " +
+                    "ingredients to give you the highest quality" +
+                    "Mexican food.",
+            "https://www.authen" +
+                    "ticstreettaco.com/"
+
         )
     )
     override fun onCreate(savedInstanceState: Bundle?) {

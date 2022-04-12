@@ -8,12 +8,4 @@ class FoodTruck : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_truck)
     }
-
-    var ID: Int
-    val foodTruckName: String
-    var foodTruckImg: Int
-    val location: String
-    val time: String
-    val foodTruckDesc: String
-    val foodTruckWebsite: String
 }
