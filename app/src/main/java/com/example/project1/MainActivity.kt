@@ -7,16 +7,13 @@ class MainActivity : AppCompatActivity() {
 
     val foodTrucks = listOf(
         foodTruckData(
-
             "Authentic Street Taco",
             "Silo Patio",
             "11am - 4pm",
             "A unique blend of street taco with high-quality " +
                     "ingredients to give you the highest quality" +
                     "Mexican food.",
-            "https://www.authen" +
-                    "ticstreettaco.com/"
-
+            "https://www.authenticstreettaco.com/"
         )
     )
     override fun onCreate(savedInstanceState: Bundle?) {
