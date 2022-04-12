@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
                     "ingredients to give you the highest quality" +
                     "Mexican food.",
             "https://www.authenticstreettaco.com/"
-        )
+        ),
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
