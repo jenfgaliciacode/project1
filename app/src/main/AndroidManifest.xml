@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project1">
         <activity
+            android:name=".FoodTruck"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewAdapter"
             android:exported="false" />
         <activity
