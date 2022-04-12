@@ -1,11 +1,11 @@
 package com.example.project1
 
-class foodTruckData {
+data class foodTruckData {
     //var ID: Int
-    val foodTruckName: String
+    var foodTruckName: String
     var foodTruckImg: Int
-    val location: String
-    val time: String
-    val foodTruckDesc: String
-    val foodTruckWebsite: String
+    var location: String
+    var time: String
+    var foodTruckDesc: String
+    var foodTruckWebsite: String
 }
