@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityMainBinding
     val foodTrucks = listOf(
         foodTruckData(
             "Authentic Street Taco",
@@ -43,7 +43,9 @@ class MainActivity : AppCompatActivity() {
         ),
     )
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        var view = binding.root
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(view)
     }
 }
