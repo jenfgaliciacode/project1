@@ -1,11 +1,11 @@
 package com.example.project1
 
 data class foodTruckData(
-    val s: String,
-    val s1: String,
-    val s2: String,
-    val s3: String,
-    val s4: String
+    val name: String,
+    val img: String,
+    val location: String,
+    val time: String,
+    val web: String
 ) {
     //var ID: Int
     var foodTruckName: String,
