@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project1">
         <activity
+            android:name=".food_truck_detail"
+            android:exported="false" />
+        <activity
             android:name=".FoodTruck"
             android:exported="false" />
         <activity
