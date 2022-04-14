@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 app:layout_constraintStart_toStartOf="@+id/foodImage"
                 app:layout_constraintTop_toBottomOf="@+id/foodImage" />
 
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintStart_toStartOf="@+id/foodName"
                 app:layout_constraintTop_toBottomOf="@+id/foodName" />
 
@@ -46,11 +48,13 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="40dp"
                 android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintBottom_toBottomOf="@+id/foodLocation"
                 app:layout_constraintStart_toEndOf="@+id/foodLocation"
-                app:layout_constraintTop_toTopOf="@+id/foodLocation" />
+                app:layout_constraintTop_toTopOf="@+id/foodLocation"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
