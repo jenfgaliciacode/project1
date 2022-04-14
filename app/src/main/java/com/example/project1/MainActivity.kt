@@ -7,35 +7,35 @@ import com.example.project1.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     val foodTrucks = listOf(
-        foodTruckData(
+        FoodTruckData(
             "Authentic Street Taco",
             "Silo Patio",
             "11am - 4pm",
             "A unique blend of street taco with high-quality ingredients to give you the highest quality Mexican food.",
             "https://www.authenticstreettaco.com/"
         ),
-        foodTruckData(
+        FoodTruckData(
             "Shah's Halal",
             "Silo Patio",
             "12am - 4pm",
             "Owned and operated by Tory Mashriqi, Shah’s Halal Foods serves strictly Halal certified meats and features a menu of several Mediterranean inspired items including rice, salad, homemade sauces, lamb, chicken and falafel. Made fresh,they are cooked over a large flat griddle.",
             "https://shahshalalfood.myfreesites.net/"
         ),
-        foodTruckData(
+        FoodTruckData(
             "Star Ginger ",
             "Silo Patio",
             "1pm - 4pm",
             "Fresh Asian flavors for campus, corporate, government, healthcare and leisure",
             "https://www.starginger.com/"
         ),
-        foodTruckData(
+        FoodTruckData(
             "Bangin Bowls",
             "Tercero DC",
             "2pm - 6pm",
             "We are a Latin fusion food truck buffet, inspired by South American and Caribbean food, to bring to our beloved city Sacramento something different, healthy, with many flavors and with fresh grilled meats. Bangin 'Bowls was created with the purpose of taking a typical Latin food to another level, such as our famous BOWLS with a street style, our FRIES CARGADAS and CHURROS SUNDAE always thinking about what our customers would like and giving the best of us.",
             "https://www.labanginbowls.com/"
         ),
-        foodTruckData(
+        FoodTruckData(
             "Hefty Gyros",
             "Storer Hall",
             "1pm - 4pm",
