@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="foodNameTextView" type="id" />
+    <item name="foodLocationTextView" type="id" />
+    <item name="foodTimeTextView" type="id" />
+    <item name="foodDescriptionTextView" type="id" />
+    <item name="foodWebTextView" type="id" />
+</resources>

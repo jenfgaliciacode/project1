@@ -1,11 +1,43 @@
 package com.example.project1
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycler_view_adapter)
+class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
+    : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+
+    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val itemImageView: ImageView = itemView.findViewById(R.id.item_image)
+        val nameTextView: TextView = itemView.findViewById(R.id.item_title)
+        val locationTextView: TextView = itemView.findViewById(R.id.item_location)
+        val timeTextView: TextView = itemView.findViewById(R.id.item_time)
+
     }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater
+            .from(parent.context)
+            .inflate(R.layout.activity_food_truck_item, parent, false)
+
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val foodtruck = foodTrucks[position]
+
+        holder.apply {
+            //holder.itemImageView.int = foodtruck.image
+            holder.nameTextView.text = foodtruck.name
+            holder.locationTextView.text = foodtruck.location
+            holder.timeTextView.text = foodtruck.time
+        }
+
+    }
+
+    override fun getItemCount() = foodTrucks.size
+
 }
