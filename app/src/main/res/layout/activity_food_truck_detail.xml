@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +10,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/item_image"
             android:layout_width="0dp"
             android:layout_height="250dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,7 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/item_image"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -64,6 +65,7 @@
             android:layout_width="375dp"
             android:layout_height="345dp"
             android:clickable="false"
+            android:isScrollContainer="true"
             android:text="@string/textview4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,5 +73,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/time"
             app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Website"
+            tools:layout_editor_absoluteX="283dp"
+            tools:layout_editor_absoluteY="340dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
