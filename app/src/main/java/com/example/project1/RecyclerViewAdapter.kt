@@ -30,10 +30,10 @@ class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
         val foodtruck = foodTrucks[position]
 
         holder.apply {
-            //holder.itemImageView.int = foodtruck.image
-            holder.nameTextView.text = foodtruck.name
-            holder.locationTextView.text = foodtruck.location
-            holder.timeTextView.text = foodtruck.time
+            itemImageView.setImageResource (foodtruck.image)
+            nameTextView.text = foodtruck.name
+            locationTextView.text = foodtruck.location
+            timeTextView.text = foodtruck.time
         }
 
     }
