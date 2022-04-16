@@ -63,6 +63,7 @@
             android:id="@+id/Description"
             android:layout_width="375dp"
             android:layout_height="345dp"
+            android:clickable="false"
             android:text="@string/textview4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
