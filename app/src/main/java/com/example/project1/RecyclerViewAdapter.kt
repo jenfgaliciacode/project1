@@ -1,5 +1,6 @@
 package com.example.project1
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
     : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val itemImageView: ImageView = itemView.findViewById(R.id.item_image)
@@ -35,7 +37,6 @@ class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
             locationTextView.text = foodtruck.location
             timeTextView.text = foodtruck.time
         }
-
     }
 
     override fun getItemCount() = foodTrucks.size
