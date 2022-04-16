@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     val foodTrucks = listOf(
         FoodTruckData(
+            0,
             "Authentic Street Taco",
             0,
             "Silo Patio",
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             "https://www.authenticstreettaco.com/"
         ),
         FoodTruckData(
+            1,
             "Buckhorn Grill",
             1,
             "Silo Patio",
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             "https://buckhorngrill.com/"
         ),
         FoodTruckData(
+            2,
             "Shah's Halal",
             2,
             "Silo Patio",
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             "https://shahshalalfood.myfreesites.net/"
         ),
         FoodTruckData(
+            3,
             "Star Ginger ",
             3,
             "Silo Patio",
@@ -50,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             "https://www.starginger.com/"
         ),
         FoodTruckData(
+            4,
             "Bangin Bowls",
             4,
             "Tercero DC",
@@ -58,6 +63,7 @@ class MainActivity : AppCompatActivity() {
             "https://www.labanginbowls.com/"
         ),
         FoodTruckData(
+            5,
             "Hefty Gyros",
             5,
             "Storer Hall",
