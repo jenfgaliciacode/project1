@@ -1,14 +1,15 @@
 package com.example.project1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.cardview.widget.CardView
+import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project1.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), RecyclerViewAdapter.MyOnClickListener {
     private lateinit var binding: ActivityMainBinding
     val foodTrucks = listOf(
         FoodTruckData(
@@ -78,15 +79,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        var view = binding.root
+        val view = binding.root
         setContentView(view)
 
-        val adapter = RecyclerViewAdapter(foodTrucks)
+        val adapter = RecyclerViewAdapter(foodTrucks, this)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.setOnClickListener(clickListener)
+    }
 
 
+    override fun OnClick(position: Int) {
+        Toast.makeText(this, foodTrucks[position].name, Toast.LENGTH_SHORT).show()
+    }
+    private val clickListener: View.OnClickListener = View.OnClickListener { view ->
+        when (view.id) {
+            R.id.card_view -> R.id.individual
+        }
     }
 }

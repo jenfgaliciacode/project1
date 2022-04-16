@@ -5,4 +5,5 @@
     <string name="textview3">TextView</string>
     <string name="textview4">TextView</string>
     <string name="todo">TODO</string>
+    <string name="visit_website">Visit Website</string>
 </resources>

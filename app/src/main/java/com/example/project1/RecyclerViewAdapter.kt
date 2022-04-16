@@ -8,15 +8,21 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
+class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>, val listener:MyOnClickListener)
     : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val itemImageView: ImageView = itemView.findViewById(R.id.item_image)
         val nameTextView: TextView = itemView.findViewById(R.id.item_title)
         val locationTextView: TextView = itemView.findViewById(R.id.item_location)
         val timeTextView: TextView = itemView.findViewById(R.id.item_time)
+        init{
+            itemView.setOnClickListener{
+                val position = absoluteAdapterPosition
+                listener.OnClick(position)
+            }
+        }
 
     }
 
@@ -37,8 +43,14 @@ class RecyclerViewAdapter(private var foodTrucks: List<FoodTruckData>)
             locationTextView.text = foodtruck.location
             timeTextView.text = foodtruck.time
         }
+
     }
 
-    override fun getItemCount() = foodTrucks.size
+    override fun getItemCount(): Int{
+        return foodTrucks.size
+    }
 
+    interface MyOnClickListener{
+        fun OnClick(position: Int)
+    }
 }
