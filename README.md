@@ -9,4 +9,4 @@ This repo contains the recycler view of the food trucks found on the UC Davis Ca
 </p>
 
 ## Stage 2:
-[View GitHub Repo](https://support.west-wind.com)
+[View GitHub Repo](https://github.com/elizabeth-hernandez-galvan/Food-Truck-App)
